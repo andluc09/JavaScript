@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>CFB Cursos - JavaScript</title>
+	<meta charset="utf-8">
+
+	<script>
+	
+		//var monchila=new Array();
+		var monchila=[];
+
+		monchila.push("Faca"); //insere no final do Array
+		monchila.push("Corda");
+		monchila.push("Perdeneira");
+		monchila.push("Chaves");
+		monchila.push("Lanterna");
+		monchila.unshift("Pedra"); //insere no ínicio do Array
+
+		monchila.pop(); //remove o último elemento do Array
+		monchila.pop();
+
+		monchila.shift(); //remove o primeiro elemento do Array
+
+		monchila.splice(2,1); //a partir de qual elemento desejo remover (Ex.: posição dois, um elemento)
+
+		monchila.splice(1,1);
+
+		document.write(monchila[0]+"<br>");
+		document.write(monchila[1]+"<br>");
+		document.write(monchila[2]+"<br>");	
+		document.write(monchila[3]+"<br>");
+		document.write(monchila[4]+"<br>");
+		document.write(monchila[5]+"<br>");	
+
+
+	</script>
+
+</head>
+<body>
+
+</body>
+</html>

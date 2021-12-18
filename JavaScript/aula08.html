@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>CFB Cursos - JavaScript</title>
+	<meta charset="utf-8">
+
+	<script>
+		
+		var pontos=40;
+		var energia=30;
+		//condição vitória => ( ((>=30) && (<=40)) || ((>=70) && (<=80)) )
+
+		if(((pontos>=30)&&(pontos<=40))||((pontos>=70)&&(pontos<=80))){
+
+			document.write("Ganhou");
+		}else{
+			document.write("Perdeu");
+		} 
+
+				if(((pontos>=30)&&(pontos<=40)&&(energia>=40))||((pontos>=70)&&(pontos<=80)&&(energia>=40))){
+
+						document.write("<br>Ganhou");
+				}else{
+						document.write("<br>Perdeu");
+				} 
+
+
+	</script>
+
+</head>
+<body>
+
+</body>
+</html>
