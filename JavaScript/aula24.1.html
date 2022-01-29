@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>CFB Cursos - JavaScript</title>
+	<meta charset="utf-8">
+
+	<script>
+		
+		
+		
+		
+	</script>
+
+</head>
+<body>
+	
+		<p id="texto">Curso de JavaScript_01</p>
+
+		<p id="texto">CFB Cursos</p>
+		<input type="text" id="cxtexto" value="CFB Cursos">
+
+		<div id="dv">Texto da DIV</div>
+
+		<script>
+			
+			//document.getElementById("texto").innerHTML="Canal Professor Bruno";
+
+			//Podemos usar a propriedade “innerHTML” para simplesmente obter o valor de um elemento ou para alterar como já vimos, veja a seguir o procedimento necessário para pegar o texto de uma tag <p> e adicionar em uma variável.
+
+			tx=document.getElementById("texto").innerHTML;
+			document.write("Texto da tag p: "+ tx);
+
+			//var cxt=document.getElementById("cxtexto").value;
+			//alert(cxt);
+
+			//document.getElementById("cxtexto").value="Curso de JavaScript";
+
+			//var cxt=document.getElementById("cxtexto").value="Curso de JavaScript";
+			//alert(cxt);
+
+			/*var cxt=document.getElementById("texto").innerHTML;
+			alert(cxt);*/
+
+			var cxt=document.getElementById("texto").innerHTML="Aula 24 - innerHTML";
+			//alert(cxt);
+
+			//document.getElementById("dv").innerHTML="Novo texto";
+			alert(document.getElementById("dv").innerHTML);
+
+		</script>
+	
+</body>
+</html>

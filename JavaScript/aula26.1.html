@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>CFB Cursos - JavaScript</title>
+	<meta charset="utf-8">
+	<style>
+		.titulo{
+			color:#f00;
+			font-size: 20px;
+			text-decoration: underline;
+		}	
+
+		div{
+			border: 1px solid #000;
+			padding: 10px;
+			display: inline-block;
+		}
+		a{
+			display: block;
+		}
+		.quadro{
+			background-color: #ddd;
+		}
+
+	</style>
+	
+		
+	<!-- querySelectorAll -->
+		
+</head>
+<body>
+	
+		<h1 class="titulo">querySelectorAll</h1>
+		<p>O querySelectorAll() é um método que retorna os elemetos do documento que correspondem a uma classe de CSS ou a uma tag específica.</p>
+		<h2 class="titulo">Curso de Javascript</h2>
+		<p>www.youtube.com.br</p>
+		<p class="titulo">cfbcursos.com.br</p>
+		<div>
+			<h3>JavaScript aula 26</h3>
+			<p>Este texto está dentro de uma div</p>
+			<p>Este também</p>
+		</div>
+		<div class="quadro">
+			<h3>JavaScript aula 26</h3>
+			<p>Este texto está dentro de uma div</p>
+			<p>Este também</p>
+		</div>
+		<a href="http://www.youtube.com/cfbcursos" target="_blank">CANAL</a>
+		<a href="http://cfbcursos.com.br">SITE</a>
+
+		<hr> <!-- Linha de Separação -->
+
+	<script>
+		//var ps=document.querySelectorAll("p");
+		//Formata a cor de fundo para vermelho do primeiro elemento com a tag <p>.
+		//ps[0].style.backgroundColor="#F00";
+	
+		//var ps=document.querySelectorAll("p");
+		//document.write(ps[0].innerHTML);
+		//ps[0].style.color="#00f";
+		//ps[0].innerHTML="NOVO TEXTO";
+
+		//var elemetos=document.querySelectorAll("p.titulo");
+		//var elemetos=document.querySelectorAll(".titulo");
+		
+		/*var elemetos=document.querySelectorAll("div > p");
+		for(var i=0; i<elemetos.length; i++){
+			//document.write(elemetos[i].innerHTML+"<br>");
+			elemetos[i].style.color="#0a0";
+
+		}*/
+
+		/*var elemetos=document.querySelectorAll("div > *");
+		for(var i=0; i<elemetos.length; i++){
+			elemetos[i].style.color="#0a0";
+
+		}*/
+
+		/*var elemetos=document.querySelectorAll("div.quadro > *");
+		for(var i=0; i<elemetos.length; i++){
+			elemetos[i].style.color="#0a0";
+
+		}*/
+
+		/*var elemetos=document.querySelectorAll("div.quadro > p");
+		for(var i=0; i<elemetos.length; i++){
+			elemetos[i].style.color="#0a0";
+
+		}*/
+
+		/*var elemetos=document.querySelectorAll("p,h1,h3");
+		for(var i=0; i<elemetos.length; i++){
+			elemetos[i].style.color="#0a0";
+
+		}*/
+
+		var elemetos=document.querySelectorAll("h1, h2, h3");
+		for(var i=0; i<elemetos.length; i++){
+			elemetos[i].style.color="#0a0";
+
+		}
+		
+
+	</script>
+	
+</body>
+</html>

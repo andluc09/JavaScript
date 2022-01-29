@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>CFB Cursos - JavaScript</title>
+	<meta charset="utf-8">
+
+	<script>
+		
+	//getElementsByTagName	
+		
+		var tagP;
+		
+	</script>
+
+</head>
+<body>
+	
+	<h2>Canal Professor Bruno</h2>
+	<p>Curso de JavaScript</p>
+	<p>www.cfbcursos.com.br</p>
+	<h2>www.youtube.com.br</h2>
+	
+	<script>
+		tagP=document.getElementsByTagName("p")[0];
+		document.write(tagP.innerHTML);
+
+		tagP=document.getElementsByTagName("p");
+		document.write("<br>"+tagP[1].innerHTML);
+
+		//var tagsP=document.getElementsByTagName("p");
+		var tags=document.getElementsByTagName("*");
+
+		tags[9].style.color="#f00";
+		tags[9].innerHTML="NOVO TEXTO";
+
+		//document.write(tagsP[3].style.color="#f00");
+
+		for(var i=0; i<tagsP.length; i++){
+		 tagsP[i].style.color="#f00";			
+		}
+
+
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>CFB Cursos - JavaScript</title>
+	<meta charset="utf-8">
+
+	<script>
+		
+	/*	var exibeMensagem = function() { 
+    var mensagemForaDoIf = "CFB<br>"; 
+    if(true) { 
+        var mensagemDentroDoIf = "Aluno<br>"; 
+        document.write(mensagemDentroDoIf);// Aluno 
+    } 
+    document.write(mensagemForaDoIf); // CFB
+
+    document.write(mensagemDentroDoIf); // Aluno
+	}
+
+	exibeMensagem();  // Imprime "Aluno", "CFB" e "Aluno"*/
+
+	//Utilização antes da declaração
+
+	/*var exibeMensagem = function() { 
+    mensagem = "<br>Aluno"; 
+    document.write(mensagem); 
+    var mensagem;
+	}
+
+	exibeMensagem(); // Imprime "Aluno"*/
+
+	//Hoisting: Em JavaScript, toda variável é “elevada/içada” (hoisting) até o topo do seu contexto de execução. Esse mecanismo move as variáveis para o topo do seu escopo antes da execução do código.
+
+	/*void function(){
+		document.write("<br>"+mensagem);
+	}();
+	var mensagem;
+
+	exibeMensagem();*/ 
+
+	//Às vezes, queremos declarar variáveis que serão utilizadas apenas dentro de um pequeno trecho do nosso código. Ter que lidar com o escopo de função das variáveis declaradas com var (escopo abrangente) pode confundir a cabeça até de programadores mais experientes.
+
+	//LET
+
+	/*var exibeMensagem = function(){
+		if(true){
+			var escopoFuncao = "<br>CFB";
+			let escopoBloco = "<br>Aluno";
+
+			document.write(escopoBloco); //Aluno
+		}
+
+		document.write(escopoFuncao); //CFB
+		document.write(escopoBloco); //Erro: Uncaught ReferenceError: escopoBloco is not defined 
+	}
+
+	exibeMensagem(); //Imprime: "Aluno", "CFB" e dá um Erro.*/
+
+	//CONST
+
+	//Embora o let garanta o escopo, ainda assim, existe a possibilidade de declararmos uma variável com let e ela ser undefined. Por exemplo:
+
+	/*void function(){
+		let mensagem;
+		document.write("<br>"+mensagem); //Imprime undefined
+	}();
+	
+	exibeMensagem();*/
+
+	/*void function(){
+		const mensagem = "Aluno";
+		document.write("<br>"+mensagem); //Aluno
+		mensagem="CFB"; //Uncaught TypeError: Assignment to constant variable
+	}();
+
+	exibeMensagem();*/
+
+	// constante válida 
+	
+		const idade = 18;
+		document.write("<br>"+idade);
+
+	// constante inválida: onde está a inicialização? 
+	
+		const pi; //Erro: Uncaught SyntaxError: Missing initializer in const declaration
+
+		//É importante utilizar const para declarar nossas variáveis, porque assim conseguimos um comportamento mais previsível, já que o valor que elas recebem não podem ser alterado!
+
+	</script>
+
+</head>
+<body>
+
+</body>
+</html>
